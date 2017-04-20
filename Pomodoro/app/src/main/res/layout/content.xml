@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.best.pomodoro.MainActivity"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    >
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@android:drawable/ic_media_play"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:cpb_background_progressbar_color="#3246ae"
+        app:cpb_background_progressbar_width="20dp"
+        app:cpb_progressbar_color="#7f8cda"
+        app:cpb_progressbar_width="10dp"
+        android:id="@+id/view"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25:00"
+        android:id="@+id/timeTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        />
+
+</RelativeLayout>
